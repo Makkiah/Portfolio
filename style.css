@@ -1,0 +1,171 @@
+
+* {
+	padding:0;
+	margin:0;
+}
+body {
+	font-size:1rem;
+	font-family: sans-serif;
+}
+
+
+/****** HEADER ******/
+
+header{
+	font-size:5rem;
+	height: 93vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(to bottom, #1F242E, #5269E0);
+	background-size:cover;
+	color: white;
+}
+
+
+/***** LANGUAGES ******/
+
+
+
+#arrow {
+	width:25px;
+	height:30px;
+}
+.downArrow {
+	display:flex;
+	align-content: baseline;
+	justify-content: center;
+	background: #5269E0;
+}
+
+.languages > ul {
+	width: 100%;
+	text-align:center;
+
+}
+.languages > ul > li{
+	margin:30px;
+	/*margin-top:37px;*/
+	padding:10px;
+	color: black;
+	background: white;
+	display: inline;
+	display: inline-block;
+}
+
+
+/***** ABOUT-PAGE *******/
+
+
+.about {
+	height:300vh;
+	display:flex;
+}
+.about-title {
+	width:50%;
+	height:100vh;
+	display:flex;
+	flex-direction: column;
+	justify-content:center;
+	align-items: center;
+	margin:0!important;
+}
+.about-title h2 {
+	font-size: 4rem;
+}
+.about-title p {
+	width: 80%;
+	font-size:1rem;
+}
+
+
+
+
+.about-pages {
+	width:50%;
+}
+.about-pages div {
+	height: 100vh;
+	display:flex;
+	flex-direction:column;
+	justify-content:space-around;
+	align-items:center;
+	color: white;
+}
+
+.about-pages div:hover {
+	box-shadow: -4px 10px 15px grey;
+}
+
+.about-pages div > p {
+	width: 80%;
+	line-height: 30px;
+}
+
+.about-pages div:nth-child(1) {
+	background: linear-gradient(to bottom, #5269e0, #4799eb);
+}
+.about-pages div:nth-child(2) {
+	background: linear-gradient(to bottom, #4799eb, #14aab8);
+}
+.about-pages div:nth-child(3) {
+	background: linear-gradient(to bottom, #14aab8, #ffc980);
+}
+
+
+/******* CONTACT-PAGE *******/
+
+.contact {
+	display:flex;
+	flex-direction:column;
+	height:100vh;
+	background: #ffc980;
+	justify-content:center;
+	align-items:center;
+	text-align: center;
+	font-size:30px;
+}
+
+.contact-me {
+	color: white;
+	margin-bottom:100px;
+	font-size:4rem;
+}
+
+.contBtns {
+	display: flex;
+	flex-direction: row;
+}
+.contact-buttons {
+	cursor: pointer;
+	font-size:3rem;
+	margin-left: 30px;
+	padding: 20px 35px;
+	border: 3px solid grey;
+	border-radius: 15px;
+	transition: .5s;
+	background-color: transparent;
+}
+.contact-buttons:hover {
+	background-color: #5269e0;
+	color: white;
+	border: 3px solid white;
+	box-shadow: -5px 5px 10px grey;
+}
+
+
+/****** FOOTER ******/
+
+.footer {
+	padding: 30px;
+	color: black;
+	font-size:2rem;
+	font-weight:bold;
+	text-align:center;
+	/*background: linear-gradient( to bottom, #ffc980, #f3fffc);*/
+	background-color: #687ce4;
+}
+.small {
+	font-size:1rem;
+}
