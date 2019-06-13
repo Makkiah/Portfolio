@@ -1,5 +1,22 @@
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+const links = document.querySelectorAll('.nav-links li');
 
-//Scrolling 
+hamburger.addEventListener('click', () => {
+	navLinks.classList.toggle('open');
+	links.forEach(link => {
+		link.classList.toggle('fade');
+	})
+})
+
+const callBttn = document.querySelector('#call-bttn');
+
+callBttn.addEventListener('click', () => {
+	alert('Business Cell: (513)252-3636');
+})
+
+
+//Scrolling Magic
 
 function splitScroll() {
 	const controller = new ScrollMagic.Controller();

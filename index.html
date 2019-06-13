@@ -8,6 +8,21 @@
 	<title>Makkiah - Portfolio</title>
 </head>
 <body>
+	<nav> 
+		<div class="hamburger">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+		</div>
+		<ul class="nav-links">
+			<li><a href="#" class="nav-link">Projects</a></li>
+			<li><a href="#" class="nav-link">About Me</a></li>
+			<li><a href="#" class="nav-link">Contact</a></li>
+			<li><a href="#" class="nav-link">Resume</a></li>
+			<li><a href="#" class="nav-link"><img id="nav-pic1" src="./images/linkedin.svg" alt="linkedin"/></a></li>
+			<li><a href="#" class="nav-link"><img id="nav-pic2" src="./images/github.png" alt="github"/></a></li>
+		</ul>
+	</nav>
 <!-- HEADER -->
 	<header>
 		<h1>Makkiah</h1> <br>
@@ -18,18 +33,17 @@
 	<div class="downArrow">
 			<img id="arrow" src="https://www.freeiconspng.com/uploads/white-down-arrow-png-2.png" alt="White Down Arrow Png"/>
 	</div>
-	<section class="languages">
-		<ul>
-			<li>Languages:</li>
-			<li>HTML5</li>
-			<li>CSS3</li>
-			<li>JavaScript</li>
-			<li>Bootstrap</li>
-			<li>Python</li>
-			<li>Figma</li>
-			<li>Git</li>
-		</ul>
-	</section>
+	<div id="languages">
+		<img class="pics" src="images/html.png" alt="html">
+		<img class="pics" src="images/css.png" alt="css">
+		<img class="pics" src="images/js.png" alt="javascript">
+		<img class="pics" src="images/react.png" alt="react js">
+		<img class="pics" src="images/bootstrap.png" alt="bootstrap">
+		<img class="pics" src="images/python.png" alt="python">
+		<img class="pics" src="images/nodejs.png" alt="node js">
+		<img class="pics" src="images/npm.png" alt="npm">
+		<img class="pics" src="images/git.png" alt="git">
+	</div>
 
 <!-- ABOUT  -->
 
@@ -37,35 +51,40 @@
 		<div class="about-title">
 			<h2>About Me</h2>
 			<br><br>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>A self-starter eager to begin a career as a web developer and 
+				willing to relocate, as well as expeditiously learn any skill 
+				to become a valuable asset to your team. Committed and driven. 
+				Fast at understanding new concepts and a great speaker for relaying 
+				information.</p>
 		</div>
 		<div class="about-pages">
-			<div> 
-				<h2>Project 1</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			<div class="project"> 
+				<h2 class="project-title">Project 1</h2>
+				<img class="project-img" src="./images/projects.jpg" alt="project image"/><br> 
+				<a class="project-bttn" href="#">See Code</a>
+				<a class="project-bttn" href="#">See Project</a>
+				</br>
+				<p class="project-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			</div>
-			<div class=""> 
-				<h2>Project 2</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			<div class="project"> 
+				<h2 class="project-title">Project 2</h2>
+				<img class="project-img" src="./images/projects.jpg" alt="project image"/><br>
+				<p class="project-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			</div>
-			<div class=""> 
-				<h2>Project 3</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			<div class="project"> 
+				<h2 class="project-title">Project 3</h2>
+				<img class="project-img" src="./images/projects.jpg" alt="project image"/><br>
+				<p class="project-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -87,14 +106,14 @@
 	
 		<div class="contBtns">
 			<button class="contact-buttons" type="button" value="Email" onclick = "parent.location='mailto:MakkiahF@Gmail.Com'">Email</button>
-			<button class="contact-buttons" type="button" value="Call" >Call</button>
+			<button class="contact-buttons" type="button" value="Call" id="call-bttn">Call</button>
 		</div>
 	</section>
 
 
 	<!-- FOOTER -->
 	<footer class="footer">
-		<p> Makkiah <small class="small">2019.</small></p>
+		<p> Site by Makkiah Muhammad <small class="small">2019.</small></p>
 	</footer>	
 
 

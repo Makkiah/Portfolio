@@ -9,11 +9,101 @@ body {
 }
 
 
+/* NAVIGATION */
+
+nav {
+    background: grey;
+    height: 10vh;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    background: skyblue;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-link{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#nav-pic1{
+	width: 40px;
+}
+#nav-pic2{
+	width: 60px;
+}
+@media screen and (max-width: 1000px) {
+
+	.line {
+		width: 30px;
+		height: 3px;
+		background: white ;
+		margin:5px;
+	}
+	nav {
+		position: relative;
+	}
+	.hamburger{
+		position: absolute;
+		cursor: pointer;
+		right: 5%;
+		top: 50%;
+		transform: translate(-5%, -50%);
+		z-index: 2;
+	}
+
+	.nav-links{
+		position: fixed;
+		background:skyblue;
+		height: 100vh;
+		width: 100%;
+		flex-direction: column;
+		clip-path: circle(100px at 100% -17%);
+		-webkit-clip-path: circle(100px at 100% -17%);
+		transition: all 1s ease-out;
+		pointer-events: none;
+
+	}
+	.nav-links.open{
+		clip-path: circle(1000px at 90% -10%);
+		-webkit-clip-path: circle(1000px at 90% -10%);
+		pointer-events: all;
+	}
+	.landing {
+		flex-direction: column;
+	}
+	.nav-links li{
+		opacity: 0;
+
+	}
+	.nav-links li a {
+		font-size: 25px;
+
+	}
+	.nav-links li:nth-child(1){
+		transition: all 0.5s ease 0.2s;
+	}
+	.nav-links li:nth-child(2){
+		transition: all 0.5s ease 0.4s;
+	}
+	.nav-links li:nth-child(3){
+		transition: all 0.5s ease 0.6s;
+	}
+	li.fade{
+		opacity: 1;
+	}
+}
 /****** HEADER ******/
 
 header{
 	font-size:5rem;
-	height: 93vh;
+	height: 83vh;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -39,20 +129,18 @@ header{
 	background: #5269E0;
 }
 
-.languages > ul {
-	width: 100%;
-	text-align:center;
+/* CODING LANGUAGES */
+#languages {
+    height: 20vh;
+    display: flex;
+    
+}
+.pics {
+    height: 90px;
+    width: 90px;
+    margin: auto;
+}
 
-}
-.languages > ul > li{
-	margin:30px;
-	/*margin-top:37px;*/
-	padding:10px;
-	color: black;
-	background: white;
-	display: inline;
-	display: inline-block;
-}
 
 
 /***** ABOUT-PAGE *******/
@@ -114,6 +202,21 @@ header{
 }
 
 
+/* Projects */
+
+.project-img {
+	width: 75%;
+	padding: 0;
+	margin: 0;
+}
+
+.project-bttn{
+	
+	width: 50px;
+	height: 35px;
+	float: left;
+}
+
 /******* CONTACT-PAGE *******/
 
 .contact {
@@ -160,7 +263,7 @@ header{
 .footer {
 	padding: 30px;
 	color: black;
-	font-size:2rem;
+	font-size:1.5rem;
 	font-weight:bold;
 	text-align:center;
 	/*background: linear-gradient( to bottom, #ffc980, #f3fffc);*/
