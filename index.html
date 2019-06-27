@@ -8,24 +8,24 @@
 	<title>Makkiah - Portfolio</title>
 </head>
 <body>
-	<nav> 
+	<nav id="siteTop"> 
 		<div class="hamburger">
 			<div class="line"></div>
 			<div class="line"></div>
 			<div class="line"></div>
 		</div>
 		<ul class="nav-links">
-			<li><a href="#" class="nav-link">Projects</a></li>
-			<li><a href="#" class="nav-link">About Me</a></li>
-			<li><a href="#" class="nav-link">Contact</a></li>
+			<li><a href="#languages" class="nav-link">About Me</a></li>
+			<li><a href="#projects" class="nav-link">Projects</a></li>
+			<li><a href="#contactMe" class="nav-link">Contact</a></li>
 			<li><a href="#" class="nav-link">Resume</a></li>
-			<li><a href="#" class="nav-link"><img id="nav-pic1" src="./images/linkedin.svg" alt="linkedin"/></a></li>
-			<li><a href="#" class="nav-link"><img id="nav-pic2" src="./images/github.png" alt="github"/></a></li>
+			<li><a href="https://www.linkedin.com/in/makkiah/" class="nav-link"><img id="nav-pic1" src="./images/linkedin.svg" alt="linkedin"/></a></li>
+			<li><a href="https://github.com/Makkiah" class="nav-link"><img id="nav-pic2" src="./images/github.png" alt="github"/></a></li>
 		</ul>
 	</nav>
 <!-- HEADER -->
 	<header>
-		<h1>Makkiah</h1> <br>
+		<p>Makkiah</p> <br>
 		
 	</header>
 
@@ -57,12 +57,14 @@
 				Fast at understanding new concepts and a great speaker for relaying 
 				information.</p>
 		</div>
-		<div class="about-pages">
+		<div class="about-pages" id="projects">
 			<div class="project"> 
 				<h2 class="project-title">Project 1</h2>
 				<img class="project-img" src="./images/projects.jpg" alt="project image"/><br> 
-				<a class="project-bttn" href="#">See Code</a>
-				<a class="project-bttn" href="#">See Project</a>
+				<div class="projectBttnDiv">
+					<a href="#"> <input class="projectBttns pair1" id="siteBttn1" type="button" value="Visit Site" /></a>
+					<a href="#"> <input class="projectBttns pair1" id="codeBttn1" type="button" value="View Code" /></a>
+				</div>
 				</br>
 				<p class="project-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -74,6 +76,10 @@
 			<div class="project"> 
 				<h2 class="project-title">Project 2</h2>
 				<img class="project-img" src="./images/projects.jpg" alt="project image"/><br>
+				<div class="projectBttnDiv">
+					<a href="#"> <input class="projectBttns pair2" id="siteBttn2" type="button" value="Visit Site" /></a>
+					<a href="#"> <input class="projectBttns pair2" id="codeBttn2"type="button" value="View Code" /></a>
+				</div>
 				<p class="project-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -84,6 +90,10 @@
 			<div class="project"> 
 				<h2 class="project-title">Project 3</h2>
 				<img class="project-img" src="./images/projects.jpg" alt="project image"/><br>
+				<div class="projectBttnDiv">
+					<a href="#"><input class="projectBttns pair3" id="siteBttn3" type="button" value="Visit Site" /></a>
+					<a href="#"><input class="projectBttns pair3" id="codeBttn3" type="button" value="View Code" /></a>
+				</div>
 				<p class="project-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -99,40 +109,21 @@
 
 
 	<section class="contact">
-		<div class="contact-me">
+		<div class="contact-me" id="contactMe">
 			<h1>Contact Me</h1>
 		</div>
 
 	
 		<div class="contBtns">
 			<button class="contact-buttons" type="button" value="Email" onclick = "parent.location='mailto:MakkiahF@Gmail.Com'">Email</button>
-			<button class="contact-buttons" type="button" value="Call" id="call-bttn">Call</button>
+			<button class="contact-buttons" type="button" value="Call" id="call-bttn">Call</button> 
 		</div>
+		
 	</section>
 
 
 	<!-- FOOTER -->
 	<footer class="footer">
+		<h6><a href="#siteTop">Back to Top</a> </h6>
 		<p> Site by Makkiah Muhammad <small class="small">2019.</small></p>
-	</footer>	
-
-
-
-
-
-
-
-
-
-
-
-<!-- SCRIPTS -->
-	<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-
-	<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-
-
-
-	<script src="./app.js"></script>
-</body>
-</html>
+	</footer>
