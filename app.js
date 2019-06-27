@@ -4,6 +4,15 @@ const links = document.querySelectorAll('.nav-links li');
 
 hamburger.addEventListener('click', () => {
 	navLinks.classList.toggle('open');
+	hamburger.classList.toggle('stay');
+	links.forEach(link => {
+		link.classList.toggle('fade');
+	})
+})
+
+navLinks.addEventListener('click', () => {
+	navLinks.classList.toggle('open');
+	hamburger.classList.toggle('stay');
 	links.forEach(link => {
 		link.classList.toggle('fade');
 	})
@@ -14,6 +23,10 @@ const callBttn = document.querySelector('#call-bttn');
 callBttn.addEventListener('click', () => {
 	alert('Business Cell: (513)252-3636');
 })
+
+
+// Smooth Scroll
+
 
 
 //Scrolling Magic
@@ -31,17 +44,3 @@ function splitScroll() {
 }
 
 splitScroll();
-
-
-
-// Button
-
-// const btn1 = document.querySelector("#btn1");
-// const btn2 = document.querySelector("#btn2");
-
-// btn1.onclick = function() {
-// 	 parent.location='mailto:abc@abc.com';
-// }
-
-
-
