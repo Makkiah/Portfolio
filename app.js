@@ -20,7 +20,7 @@ navLinks.addEventListener('click', () => {
 
 const callBttn = document.querySelector('#call-bttn');
 
-function callMe(){
+callBttn.addEventListener('click', () => {
 	alert('Business Cell: (513)252-3636');
 })
 
